@@ -5,6 +5,10 @@ class kalkulator{
 	public:
 	float a,b;
 };
+
+double kurang(float x, float y){
+        return x-y;
+
 int main(){
-	
+        
 }
