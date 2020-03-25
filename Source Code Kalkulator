@@ -13,7 +13,6 @@ double kurang(float x, float y){
 }	
 double bagi (float x , float y){
         return x/y;
-//ini gua punya kerjaan
 }
 
 int main(){
