@@ -16,5 +16,13 @@ double bagi (float x , float y){
 }
 
 int main(){
+	kalkulator obj;
+	cout<<"Masukkan angka 1 = ";
+	cin>>obj.a;
+	cout<<"Masukkan angka 2 = ";
+	cin>>obj.b;
+	cout<<"Hasil Penambahan = "<<tambah(obj.a,obj.b)<<endl;
+	cout<<"Hasil Pengurangan = "<<kurang(obj.a,obj.b)<<endl;
+	cout<<"Hasil Pembagian = "<<bagi(obj.a,obj.b)<<endl;
         
 }
