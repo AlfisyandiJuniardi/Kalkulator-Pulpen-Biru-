@@ -4,3 +4,6 @@ Class kalkulator{
   Public :
   float a,b;
   };
+  double tambah(float x, float y){
+  returnx+y;
+  }
