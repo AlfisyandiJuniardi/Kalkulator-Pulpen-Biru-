@@ -8,3 +8,17 @@ class Kalkulator{
 double tambah(float x, float y){
     return x+y;
   }
+double kurang(float x, float y){
+    return x-y;
+  }
+double bagi(float x, float y){
+    return x/y;
+  }
+double kali(float x, float y){
+    return x*y;
+  }
+
+int main(){
+
+
+}
