@@ -5,5 +5,8 @@ Class kalkulator{
   float a,b;
   };
   double tambah(float x, float y){
-  returnx+y;
+    return x+y;
+  }
+  double kurang(float x, float y){
+    return x-y;
   }
