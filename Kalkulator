@@ -19,7 +19,7 @@ double kali(float x, float y){
   }
 
 int main(){
-  kalkulator obj;
+  Kalkulator obj;
   cout<<"Masukkan Angka ke-1 = ";
   cin>>obj.a;
   cout<<"Masukkan Angka ke-2 = ";
