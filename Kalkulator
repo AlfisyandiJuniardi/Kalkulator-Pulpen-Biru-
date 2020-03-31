@@ -19,6 +19,13 @@ double kali(float x, float y){
   }
 
 int main(){
-
-
+  kalkulator obj;
+  cout<<"Masukkan Angka ke-1 = ";
+  cin>>obj.a;
+  cout<<"Masukkan Angka ke-2 = ";
+  cin>>obj.b;
+  cout<<"Hasil Penambahan = "<<tambah(obj.a,obj.b)<<endl;
+  cout<<"Hasil Pengurangan = "<<kurang(obj.a,obj.b)<<endl;
+  cout<<"Hasil Pembagian = "<<bagi(obj.a,obj.b)<<endl;
+  cout<<"Hasil Perkalian = "<<kali(obj.a,obj.b);
 }
