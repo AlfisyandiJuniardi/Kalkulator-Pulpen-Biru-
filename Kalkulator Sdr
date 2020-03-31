@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+Class kalukulator {
+  Public:
+  float a,b;
+};
+
+double tambah(float x, float y){
+  return x+y;
+ }
