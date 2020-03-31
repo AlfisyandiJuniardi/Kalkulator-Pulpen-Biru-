@@ -1,0 +1,6 @@
+#include<iostream>
+uisng namespace std;
+Class kalkulator{
+  Public :
+  float a,b;
+  };
