@@ -4,3 +4,7 @@ class Kalkulator{
   public:
   float a,b;
 };
+
+double tambah(float x, float y){
+    return x+y;
+  }
