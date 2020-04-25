@@ -1,0 +1,35 @@
+.samping{
+	height: 100%;
+	width: 250px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #1F2837;
+	overflow-x: hidden;
+	padding-top: 16px;
+}
+
+.halaman{
+	background-color: white;
+	border-radius: 5px;
+}
+
+.nav-link:hover {
+	background-color: #343a40;
+}
+
+.garis {
+	border-top: 1px #343a40 solid;
+	height: 0px;
+	width: 100%;
+}
+
+.card-body-icon	{
+	position: absolute;
+	z-index: 0;
+	top: 1px;
+	right: 20px;
+	opacity: 0.08;
+	font-size: 80px;
+} 
