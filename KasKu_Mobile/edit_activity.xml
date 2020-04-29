@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Edit_Activity">
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id : "
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/tvNominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nominal : "
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/tvJenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis : "
+        android:textSize="28sp"/>
+
+
+    <TextView
+        android:id="@+id/tvTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal : "
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/tvCatatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catatan : "
+        android:textSize="28sp"/>
+
+    <EditText
+        android:id="@+id/edtId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Id"
+        android:layout_toRightOf="@id/tvId"
+        android:layout_alignBaseline="@id/edtId"/>
+
+
+    <EditText
+        android:id="@+id/edtNominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nominal"
+        android:layout_toRightOf="@id/tvNominal"
+        android:layout_alignBaseline="@id/edtId"/>
+
+
+    <EditText
+        android:id="@+id/edtJenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Jenis"
+        android:layout_toRightOf="@id/tvJenis"
+        android:layout_alignBaseline="@id/edtId"/>
+
+
+    <EditText
+        android:id="@+id/edtTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal"
+        android:layout_toRightOf="@id/tvTanggal"
+        android:layout_alignBaseline="@id/edtId"/>
+
+
+    <EditText
+        android:id="@+id/edtCatatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Catatan"
+        android:layout_toRightOf="@id/tvCatatan"
+        android:layout_alignBaseline="@id/edtId"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvCatatan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btnUpdate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"/>
+
+        <Button
+            android:id="@+id/btnDelete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Delete"/>
+
+        <Button
+            android:id="@+id/btnBackGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Back"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
