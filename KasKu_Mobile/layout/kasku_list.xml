@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:hint="Id"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/tvNominal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Nominal"
+            android:textSize="15sp"
+            android:layout_below="@+id/tvId"/>
+
+        <TextView
+            android:id="@+id/tvJenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Jenis"
+            android:textSize="15sp"
+            android:layout_below="@id/tvNominal"/>
+
+
+        <TextView
+            android:id="@+id/tvTanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Tanggal"
+            android:textSize="15sp"
+            android:layout_below="@+id/tvJenis"/>
+
+        <TextView
+            android:id="@+id/tvCatatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Catatan"
+            android:textSize="15sp"
+            android:layout_below="@+id/tvTanggal"/>
+    </RelativeLayout>
+
+    <View
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+</LinearLayout>
