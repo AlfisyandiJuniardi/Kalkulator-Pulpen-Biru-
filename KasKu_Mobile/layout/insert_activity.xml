@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_Insert"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Insert_Activity">
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:hint="Id"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tvNominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nominal"
+        android:textSize="15sp"
+        android:layout_below="@+id/tvId"/>
+
+    <TextView
+        android:id="@+id/tvJenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Jenis"
+        android:textSize="15sp"
+        android:layout_below="@id/tvNominal"/>
+
+
+    <TextView
+        android:id="@+id/tvTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal"
+        android:textSize="15sp"
+        android:layout_below="@+id/tvJenis"/>
+
+    <TextView
+        android:id="@+id/tvCatatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Catatan"
+        android:textSize="15sp"
+        android:layout_below="@+id/tvTanggal"/>
+
+    <EditText
+        android:id="@+id/edtNominal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Nominal"
+        android:layout_toRightOf="@+id/tvNominal"
+        android:layout_alignBaseline="@+id/tvNominal"/>
+
+    <EditText
+        android:id="@+id/edtJenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Jenis"
+        android:layout_toRightOf="@+id/tvJenis"
+        android:layout_alignBaseline="@+id/tvJenis"/>
+
+
+    <EditText
+        android:id="@+id/edtTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal"
+        android:layout_toRightOf="@+id/tvTanggal"
+        android:layout_alignBaseline="@+id/tvTanggal"/>
+
+    <EditText
+        android:id="@+id/edtCatatan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Jenis"
+        android:layout_toRightOf="@+id/tvCatatan"
+        android:layout_alignBaseline="@+id/tvCatatan"/>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvNominal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/btnInserting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Insert"/>
+
+        <Button
+            android:id="@+id/btnBackGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
