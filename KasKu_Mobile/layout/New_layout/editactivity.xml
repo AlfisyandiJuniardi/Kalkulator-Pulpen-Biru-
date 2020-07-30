@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images1"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:id="@+id/viewOpsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/edjenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis "
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="18dp"/>
+
+        <TextView
+            android:id="@+id/ednominal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edjenis"
+            android:text="Nomina "
+            android:textSize="20sp"
+            android:layout_marginBottom="19dp"/>
+
+        <TextView
+            android:id="@+id/edtanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ednominal"
+            android:text="Tanggal"
+            android:textSize="20sp"
+            android:layout_marginBottom="19dp"/>
+
+        <TextView
+            android:id="@+id/edcatatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtanggal"
+            android:text="Catatan  "
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edtOpsi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/viewOpsi"
+        android:layout_toRightOf="@id/viewOpsi">
+
+        <EditText
+            android:id="@+id/edtjenised"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="jenis"
+            android:layout_toEndOf="@id/edjenis"
+            android:layout_toRightOf="@id/insjenis" />
+
+        <EditText
+            android:id="@+id/edtnominaled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="nominal"
+            android:layout_below="@id/edtjenis"
+            android:layout_toEndOf="@id/ednominal"
+            android:layout_toRightOf="@id/ednominal" />
+
+        <EditText
+            android:id="@+id/edttanggaled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="2/05/2020"
+            android:layout_below="@id/edtnominaled"
+            android:layout_toEndOf="@id/ednominal"
+            android:layout_toRightOf="@id/ednominal" />
+
+        <EditText
+            android:id="@+id/edtcatataned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="catatan"
+            android:layout_below="@id/edttanggaled"
+            android:layout_toEndOf="@id/edcatatan"
+            android:layout_toRightOf="@id/edcatatan" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/edtOpsi"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnInsertig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="edit"/>
+
+    </LinearLayout>
+</RelativeLayout>

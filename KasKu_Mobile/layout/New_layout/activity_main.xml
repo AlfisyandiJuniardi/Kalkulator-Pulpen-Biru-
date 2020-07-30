@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/images1"
+    android:padding="20dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/kas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kasku"
+                android:gravity="center"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:id="@+id/saldo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kas"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saldo"
+                    android:textSize="23sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:hint="@string/rp_2000000"
+                    android:textSize="21sp"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/gruptombol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnInsertmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insert"
+            android:layout_below="@+id/top"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="15dp" />
+
+        <Button
+            android:id="@+id/btnEditmain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_kas"
+            android:layout_margin="3dp"
+            android:layout_below="@+id/top" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/btas"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/gruptombol"
+        android:background="@color/lightgray"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btas"
+        android:text="10 Transaksi Terakhir"/>
+
+    <View
+        android:id="@+id/btas2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/text"
+        android:background="@color/lightgray"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btas2"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
