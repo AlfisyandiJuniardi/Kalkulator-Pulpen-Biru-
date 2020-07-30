@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+        <TextView
+            android:id="@+id/list_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Id"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/list_jenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Jenis"
+            android:layout_below="@id/list_id"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/list_nominal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_jenis"
+            android:hint="Nominal"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/list_tanggal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_nominal"
+            android:hint="Nominal"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/list_catatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_tanggal"
+            android:hint="Catatan"
+            android:textSize="16sp"/>
+
+        <View
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+</RelativeLayout>
