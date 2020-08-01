@@ -45,17 +45,6 @@
             </a>
             <div class="garis"></div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link text-white pt-3 pb-3" href="laporan.php">
-            <table class="ml-2">
-              <tr>
-                <td width="30px"><i class="fas fa-chart-line"></i></td>
-                <td>Laporan</td>
-              </tr>
-            </table>
-            </a>
-            <div class="garis"></div>
-        </li>
       </ul>
     </div>
 
